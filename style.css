@@ -2,6 +2,8 @@
 
 body {
     margin: 0;
+    margin-left: 50px;
+    background-color: #ffff00;
 }
 
 .name {
@@ -11,7 +13,8 @@ body {
 
 h1 {
     color: red;
-    font: bold
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #main {
@@ -23,6 +26,11 @@ h1 {
 body p img {
     border: 10px solid #0af088;
     float: right;
+    margin-right: 30px;
+}
+
+a {
+    color: red;
 }
 
 .keyword {
