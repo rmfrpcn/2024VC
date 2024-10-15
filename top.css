@@ -17,28 +17,9 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#main {
-    width: 570px;
-    margin-bottom: 30px;
-    float: left;
-}
-
-body p img {
-    border: 10px solid #0af088;
-    float: right;
-    margin-right: 30px;
-}
-
-a {
-    color: red;
-}
-
-.keyword {
-    color: blue;
-    font-weight: bold;
-}
-
 body ul {
+    padding: 20px;
+    width: 240px;
+    height: 60px;
     border: 10px solid #ffaaaa;
-    border-radius: 100%;
-}
+    }
