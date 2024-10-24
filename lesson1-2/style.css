@@ -37,8 +37,3 @@ a {
     color: blue;
     font-weight: bold;
 }
-
-body ul {
-    border: 10px solid #ffaaaa;
-    border-radius: 100%;
-}
