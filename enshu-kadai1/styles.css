@@ -16,7 +16,6 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -28,7 +27,7 @@ header {
 
 ul.navmenu {
     margin: 0;
-    padding: 0 0 0 15px;
+    padding: 0;
     background-color: #000;
 }
 
@@ -69,6 +68,7 @@ ul.navmenu li:hover ul {
 h1 img {
     width: 30%;
 }
+
 h1 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -94,27 +94,28 @@ h1 {
 .slide-wrapper {
     width: 100%;
     height: 800px;
-    position: relative; 
+    position: relative;
     overflow: hidden;
 }
 
-.next, .prev {
-    position: absolute; 
+.next,
+.prev {
+    position: absolute;
     width: 20px;
     height: 20px;
-    top: 50%; 
-    transform: translateY(-50%); 
-    z-index: 10; 
-    cursor: pointer; 
-    border: solid 3px white; 
-    background: transparent; 
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    border: solid 3px white;
+    background: transparent;
 }
 
 .next {
     right: 20px;
     border-top: none;
     border-left: none;
-    transform: translateY(-50%) rotate(-45deg); 
+    transform: translateY(-50%) rotate(-45deg);
 }
 
 .prev {
@@ -154,11 +155,12 @@ h1 {
     color: #ff5722;
     font-weight: bold;
 }
+
 /* メニュー */
 .menu-category {
     margin: 20px;
     padding: 20px;
-    border:  solid #c00;
+    border: solid #c00;
     border-radius: 5px;
 }
 
@@ -207,7 +209,7 @@ footer {
     .menu-item img {
         margin-bottom: 10px;
         height: 200px;
-        width:  200px;
+        width: 200px;
     }
 
     .menu-item div {
