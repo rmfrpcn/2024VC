@@ -181,7 +181,9 @@ h1 {
     height: 200px;
     border-radius: 5px;
     border: 2px solid #c00;
+    object-fit: cover;
 }
+
 
 .menu-item div {
     text-align: left;
@@ -204,7 +206,8 @@ footer {
 
     .menu-item img {
         margin-bottom: 10px;
-        width: 100px;
+        height: 200px;
+        width:  200px;
     }
 
     .menu-item div {
