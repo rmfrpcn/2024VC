@@ -5,22 +5,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevButton = document.getElementById('prev');
     let currentIndex = 0;
 
+    // スライドの幅を設定
+    const slideCount = slides.length;
+    slide.style.width = `${slideCount * 100}%`;
+    Array.from(slides).forEach(slideItem => {
+        slideItem.style.width = `${100 / slideCount}%`;
+    });
+
     const updateSlidePosition = () => {
-        slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+        slide.style.transform = `translateX(-${currentIndex * (100 / slideCount)}%)`;
     };
 
     nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % slides.length;
+        currentIndex = (currentIndex + 1) % slideCount;
         updateSlidePosition();
     });
 
     prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        currentIndex = (currentIndex - 1 + slideCount) % slideCount;
         updateSlidePosition();
     });
 
     setInterval(() => {
-        currentIndex = (currentIndex + 1) % slides.length;
+        currentIndex = (currentIndex + 1) % slideCount;
         updateSlidePosition();
-    }, 5000); 
+    }, 5000);
 });
