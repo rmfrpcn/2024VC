@@ -66,6 +66,9 @@ ul.navmenu li:hover ul {
     display: block;
 }
 
+h1 img {
+    width: 30%;
+}
 h1 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -91,34 +94,34 @@ h1 {
 .slide-wrapper {
     width: 100%;
     height: 800px;
-    position: relative; /* 必須: 矢印配置の基準 */
+    position: relative; 
     overflow: hidden;
 }
 
 .next, .prev {
-    position: absolute; /* 親要素内での位置を制御 */
-    width: 20px;       /* 矢印の幅 */
-    height: 20px;      /* 矢印の高さ */
-    top: 50%;          /* 上下の中央に配置 */
-    transform: translateY(-50%); /* 上下方向で中央に揃える */
-    z-index: 10;       /* 矢印を前面に表示 */
-    cursor: pointer;   /* マウスオーバーでクリック可能に見せる */
-    border: solid 3px white; /* 矢印の形を作るための線 */
-    background: transparent; /* 背景は透明 */
+    position: absolute; 
+    width: 20px;
+    height: 20px;
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 10; 
+    cursor: pointer; 
+    border: solid 3px white; 
+    background: transparent; 
 }
 
 .next {
-    right: 20px; /* スライド右端からの距離 */
-    border-top: none; /* 矢印の不要な辺を非表示 */
+    right: 20px;
+    border-top: none;
     border-left: none;
-    transform: translateY(-50%) rotate(-45deg); /* 右向き矢印の形状 */
+    transform: translateY(-50%) rotate(-45deg); 
 }
 
 .prev {
-    left: 20px; /* スライド左端からの距離 */
-    border-bottom: none; /* 矢印の不要な辺を非表示 */
+    left: 20px;
+    border-bottom: none;
     border-right: none;
-    transform: translateY(-50%) rotate(-45deg); /* 左向き矢印の形状 */
+    transform: translateY(-50%) rotate(-45deg);
 }
 
 
@@ -174,8 +177,8 @@ h1 {
 
 .menu-item img {
     flex-shrink: 0;
-    width: 120px;
-    height: auto;
+    width: 200px;
+    height: 200px;
     border-radius: 5px;
     border: 2px solid #c00;
 }
