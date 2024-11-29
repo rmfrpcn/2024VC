@@ -214,3 +214,10 @@ footer {
         text-align: center;
     }
 }
+
+/* アクセス */
+textarea {
+width: 500px;
+height: 170px;
+overflow-y: scroll;
+}
